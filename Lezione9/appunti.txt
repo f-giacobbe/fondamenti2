@@ -1,0 +1,29 @@
+-----TAIL RECURSION-----
+
+Quando la chiamata ricorsiva (tail recursion) viene fatta nel return
+
+    es. la funzione F(0) restituisce F(1)
+
+il record di attivazione di F(0) viene cancellato, in quanto non deve fare più nulla, perciò è molto
+più efficiente scrivere funzioni ricorsive come tail recursion
+
+
+
+
+-----SIGNATURE PRIVATE-----
+se un metodo viene segnato come PRIVATE, può essere utilizzata solo all'interno della classe, ovvero
+se ad esempio, un altro utente importa il mio pacchetto, non può chiamare quella funzione
+
+    es. nella funzione di prima (eOrdinata), la funzione "maggiore", ovvero quella che noi vogliamo che
+        l'utente finale chiami la rendiamo pubblica, mentre la funzione "minore", ovvero quella chiamata
+        a sua volta dalla funzione eOrdinata, la rendiamo privata, in quanto vogliamo che solo la funzione
+        stessa la possa richiamare
+
+
+
+
+-----NULL-----
+il "null" è un valore fittizio di memoria
+
+assegnando un'array a null      a = null;   NON creo un array di lunghezza 0, infatti se provo a richiamare
+a.length, mi viene dato errore. L'unica operazione consentita è la verifica a==null.

@@ -1,0 +1,9 @@
+è possibile, in java, rendere una classe "autoadattabile" (es. a int, string, float, ecc.)
+(MECCANISMO DEI TIPI GENERICI) -> vedi es. in classe Coppia
+
+
+--WRAPPER CLASS-- immutabili
+IMPORTANTE - Ciò che cambia è che, ad esempio, Integer è un oggetto, e di conseguenza anche gli oggetti di
+tipo Integer, nello Stack contengono l'indirizzo di memoria, mentre il valore effettivo è situato nell'Heap
+(a differenza del tipo primitivo int che lo contiene direttamente nello Stack)
+    Occorre pertanto stare attenti alle comparazioni.

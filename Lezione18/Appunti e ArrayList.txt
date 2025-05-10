@@ -1,0 +1,33 @@
+Le LinkedList di java possono usare la previous perché sono DOPPIAMENTE CONCATENATE, quindi non hanno solo
+il puntatore in avanti (successore), ma ne hanno anche uno in indietro (predecessore).
+
+---DOMANDA D'ESAME---
+Scrivere un metodo ricorsivo sulle LinkedList (quindi saper fare la ricorsione usando gli iteratori)
+
+
+
+Introduciamo l'ArrayList<>, formata in maniera diversa da una LinkedList perché quando viene creata,
+all'interno per memorizzare i dati utilizza degli array (utilizziamo gli stessi metodi presenti in LinkedList)
+
+    es. inizialmente crea un array di 4 elementi; se facciamo addLast() e vogliamo aggiungere più di 4 elementi,
+        verrà cancellato l'array da 4 e ne verrà creato uno più grande (lungo il doppio ad esempio)
+
+    es. se dovessimo fare un .add(2, 100) per aggiungere in posizione farà uno shift degli altri elementi
+
+Quindi notiamo che per quando riguarda aggiungere in testa o in coda, prelevare elementi da una certa posizione,
+sarà molto più veloce di una LinkedList.
+    Ma per quanto riguarda aggiungere o rimuovere in posizione sarà molto più lento.
+Allora ci chiediamo quale sia meglio tra LinkedList o ArrayList (dipende).
+
+
+Su Array List si potranno utilizzare le get molto più facilmente perché più efficienti.
+
+
+IMPORTANTE
+L'ArrayList p come se fosse un array circolare, quindi se nell'array la prima posizione è occupata ma si fa
+la .addFirst() e l'array ha cellette libere alla fine, allora aggiungerà la prima posizione alla fine e
+quando verrà scandito l'array partirà dalla posizione del "primo elemento" e tornerà all'inizio per
+completare.
+
+
+Posso fare new ArrayList(100) e si scandisce quante cellette vogliamo, ma come lunghezza sarà 0.

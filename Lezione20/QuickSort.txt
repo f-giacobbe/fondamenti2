@@ -1,0 +1,27 @@
+--QUICK SORT--
+Il metodo di ordinamento più utilizzato, nonostante sia più lento del merge sort nel caso peggiore, nel caso
+medio è il più veloce.
+
+-Complessità: n log(n) nel caso medio
+              n^2 nel caso peggiore
+
+Il quick sort è un algoritmo ricorsivo.
+
+Funziona come segue: divido l'array in due parti e nella prima parte metto tutti gli elementi minori del 
+pivot, mentre dall'altra quelli maggiori. Dopo quest'operazione ho la certezza della posizione ordinata
+nell'array del pivot.
+    Sicché, ricorsivamente, rifaccio la stessa cosa nelle due parti dell'array.
+
+Il pivot viene scelto in maniera indifferente: spesso viene scelto in prima posizione, talvolta in posizione
+centrale, talvolta casualmente, ecc. Nella nostra implementazione lo prenderemo centralmente.
+
+
+Invece che creare nuovi array di appoggio, lavoro sullo stesso array in questo modo:
+Dopo aver scelto il pivot, scorro il restante array tramite due indici:
+    -l'indice i va verso destra, e scandisce il vettore finché non incontra un numero maggiore del pivot
+    -indice j va verso sinistra, e scandisce il vettore finché non incontra un numero minore del pivot
+al ché fa uno swap
+quando i == j, ho trovato la posizione in cui inserire il pivot
+
+
+Preferito al merge sort, in quanto il merge sort utilizza l'array di appoggio, mentre questo no

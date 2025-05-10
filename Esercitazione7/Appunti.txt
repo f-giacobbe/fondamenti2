@@ -1,0 +1,11 @@
+E' possibile rimuovere elementi da una LinkedList mentre la si itera, utilizzando l'iteratore
+Funziona rimuovendo l'elemento restituito da it.next(), quindi
+
+    if (it.hasNext()) {
+        curr = it.next();
+        it.remove();
+    }
+
+
+
+ListIterator.add(x)     inserisce l'elemento x che gli passiamo tra l'elemento next e previous

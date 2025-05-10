@@ -1,0 +1,6 @@
+---MERGE SORT--- (esempio di divide and conquer)
+-Algoritmo logaritmico (n*log(n)) - perché suddivido l'array smezzandolo log(n) volte, e per ogni livello
+compio n operazioni
+
+Funziona ricorsivamente, dividendo l'array finché non lavoro su array monodimensionali, al ché sono, per 
+definizione ordinati, e posso dunque applicare l'algoritmo di merge

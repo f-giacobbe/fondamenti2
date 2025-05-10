@@ -1,0 +1,24 @@
+--STRINGHE--
+
+
+>LOCAZIONE IN MEMORIA DELLE STRINGHE
+    
+    String s = "Ciao";
+
+ciò che avviene in memoria è che nello STACK abbiamo l'indirizzo di memoria che punterà all'area dell'HEAP
+contenente la sequenza di caratteri di cui è composta la stringa (viene quindi trattata come un array di 
+caratteri).
+    Nonostante la similarità con gli array, non è possibile accedere a un carattere della stringa nel
+seguente modo:
+
+    s[0] XXX - non si può fare, ma uso la funzione ".charAt(index)"
+
+Inoltre, a differenza degli array, quanto stampiamo una stringa viene stampato ciò che ci aspettiamo, a 
+differenza degli arary dove viene stampato l'indirizzo di memoria.
+
+
+
+
+
+Tutti i tipi di Java che iniziano con la lettera maiuscola (come String) sono dei tipi su cui 
+è possibile richiamare delle funzioni predefinite (String - possiamo richiamare s.equals() ad esempio)

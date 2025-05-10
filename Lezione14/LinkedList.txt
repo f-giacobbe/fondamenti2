@@ -1,0 +1,11 @@
+LINKED LIST / LISTA CONSECUTIVA - a differenza degli array, è una struttura dati dinamica
+     * rappresentata astrattamente come una sequenza di nodi (ogni nodo punta al nodo successivo); ma mentre in
+     * un array le celle sono locazioni consecutive di memoria (il puntatore è quindi implicito), in una lista
+     * il puntatore è ESPLICITO: ogni nodo, oltre a contenere il suo contenuto, contiene l'indirizzo della
+     * cella successiva (il successore dell'ultima cella è null).
+     * I nodi delle linked list NON sono necessariamente consecutivi nell'heap.
+     * Quindi, quando aggiungo un elemento ad una linked list, NULLA viene eliminato, ma viene semplicemente
+     * aggiunto un nuovo nodo.
+     * 
+     * Per accedere alla lunghezza della lista, astrattamente partendo dal primo elemento conto quante volte
+     * posso passare a un successore, finché non ne ho più

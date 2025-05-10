@@ -1,0 +1,35 @@
+le variabili base vanno nello STACK (bool, char, int, ecc.) -   gestione a pila DINAMICA, in quanto gli slot
+in memoria vengono dinamicamente allocati e liberati
+
+
+
+Un ARRAY/vettore è una sequenza di elementi tutti dello stesso tipo
+
+    es.     int[] a;        si tratta di una variabile di tipo array contenente una sequenza di int
+
+questo tipo di variabili vengono allocate nell'HEAP come a[0], a[1], a[i], dove i indica l'i-esimo elemento
+dell'array; mentre nello STACK viene creata la variabile a contenente l'indirizzo che rimanda all'heap
+
+    a[0] = 4;       accedo all'elemento in posizione 0 dell'array a, assegnandolo al valore 4
+
+a[1] si trova 32-bit dopo a[0] (nel caso di array di tipo int). Nello stack, infatti, è contenuto l'indirizzo
+di memoria di a[0], e per accedere agli altri Java saprà come fare data la premessa precedente
+
+
+ma NON posso eseguire di fila questi due comandi:
+
+    int[] a;
+    a[0] = 4;
+
+in quanto non ho specificato la dimensione dell'array (la sua cardinalità). Per farlo faccio così:
+
+  ->  int[] a = new int[3];        per farlo di 3 dimensioni (a[0], a[1], a[2])
+
+
+al ché posso eseguire finalmente il comando
+
+    a[0] = 6;
+
+
+
+    a.length    per accedere alla dimensione dell'array

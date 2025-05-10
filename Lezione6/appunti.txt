@@ -1,0 +1,11 @@
+È possibile, dentro un programma java, definire due metodi omonimi, però con metodi diversi:
+
+    es.
+
+        public class void Metodo(int a)
+
+
+        public class void Metodo(int a, int b)
+
+
+e saranno metodi diversi, a seconda di quanti argomenti diamo

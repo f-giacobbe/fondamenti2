@@ -1,0 +1,9 @@
+AND && ->    if (a>b && c<3)
+
+OR ||  ->    if (a>b || c<3)
+
+
+invece di
+    a = a + b
+si può scrivere
+    a += b

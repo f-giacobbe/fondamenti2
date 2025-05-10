@@ -1,0 +1,17 @@
+--SOLLEVARE ECCEZIONE--
+
+    throw new RuntimeException("Numero non valido!");
+
+
+anche se il modo più pulito sarebbe creare una classe apposta (anche RuntimeException è una classe), 
+chiamata ad esempio EccezioneIndiceNonValido
+
+    public class EccezioneIndiceNonValido extends RuntimeException {
+        public String toString() {
+            return "Indice non valido";
+        }
+    }
+
+e poi chiamarla come
+
+    throw new EccezioneIndiceNonValido();

@@ -1,0 +1,11 @@
+---------------FUNZIONI-------------------
+In Java, le funzioni vengono scritte fuori dal main, ma comunque dentro la classe
+
+es.     public static void "nomeFunzione"("tipo" "nomeParametro") {}
+
+
+all'interno della funzione possiamo usare il RETURN, ma ci sono due casi differenti:
+    -se la funzione non restituisce nulla, allora il return è implicito, ma lo si può comunque utilizzare
+    per uscire prima dalla funzione
+
+    -se la funzione restituisce qualcosa dobbiamo utilizzarlo
