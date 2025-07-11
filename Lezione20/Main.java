@@ -39,7 +39,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        int[] a = {1, 3, 2, 1, 0, 4};
+        int[] a = {5, 1, 56, 1, 9, 0, -5, 1, 6, 1, 6, 5, 12};
         ListaConcatenataInt l = new ListaConcatenataInt(a); //3
 
         IO.println(l.numeroSottoseqOrdinate());

@@ -20,11 +20,9 @@ public class QuickSort {
             quickSort(a, low, pivotIndex-1);
         }
 
-        if (pivotIndex+1 < high) {
-            quickSort(a, pivotIndex+1, high);
+        if (pivotIndex < high) {
+            quickSort(a, pivotIndex, high);
         }
-
-        return;
     }
 
     /**
